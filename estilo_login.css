@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+/*FONDO DE PÁGINA*/
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image:url(../images/login_fondo.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+/*POSICIÓN DE TODAS LAS CAJAS*/
+main{
+    width:100%;
+    padding:20px;
+    margin:auto;
+    margin-top:200px;
+}
+.contenedor_todo{
+    width:100%;
+    max-width:800px;
+    margin:auto;
+    position:relative;
+}
+.caja_trasera{
+    width:100%;
+    padding:10px 20px;
+    display: flex;/* Dos columnas */
+    justify-content:center;
+    background-color: rgba(0, 128, 255,0.3);
+    border-radius:10px;
+
+}
+
+.caja_trasera div{
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms;
+}
+.caja_trasera div button{
+    margin-top:30px;
+}
+.caja_trasera div h3{
+    font-weight:400;
+    font-size:26px;
+}
+.caja_trasera button{
+    padding: 10px 40px;
+    border:2px solid #fff;
+    background: transparent;
+    font-size:14px;
+    font-weight:600;
+    cursor:pointer;
+    color:white;
+    outline: none;
+    transition: all 500ms;
+}
+.caja_trasera button:hover{/*RESALTAR EL BOTÓN*/
+    background: #fff;
+    color:#0080ff80;
+}
+/*FORMULARIOS*/
+.contenedor_login_registro{
+    display: flex;
+    align-items:center;
+    width: 100%;
+    max-width:360px;
+    position:relative;
+    top:-175px;
+    left:10px;
+    
+    transition: left 700ms cubic-bezier(0.175, 0.855, 0.320, 1.275);/*ANIMACIÓN*/
+} 
+/*REGISTRO*/
+.contenedor_login_registro form{
+    width:100%;
+    padding: 80px 20px;
+    background: #fff;
+    position: absolute;
+    border-radius:40px;
+}
+.contenedor_login_registro form h2{
+    font-size:30px;
+    text-align:center;
+    margin-bottom: 20px;
+    color:#82b2f5;
+}
+.contenedor_login_registro form input{
+    width:100%;
+    padding: 10px;
+    margin-top: 20px;
+    border:none;
+    background: #F2F2F2;
+    font-size:16px;
+    outline:none;
+}
+/*BOTÓN DE REGISTRO*/
+.contenedor_login_registro form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: white;
+    font-size: 14px;
+    background:#82b2f5;
+    color:white;
+    cursor:pointer;
+    outline:none;
+}    
+/*TRANSICIÓN*/
+.formulario_login{
+    opacity:1;
+    display:block;
+}
+.formulario_registro{
+    display:none;
+}
+
+/*Hacer el ajuste a pantalla*/
+/*INICIO DE SESIÓN*/
+@media screen and (max-width: 850px){
+    main{
+        margin-top:50px;
+    }
+    .caja_trasera{
+        max-width:350px;
+        height:300px;
+        flex-direction: column;
+        margin: auto;
+    }
+    .caja_trasera div{
+        margin: 0px;
+        position:absolute;
+    }
+    /*formularios*/
+    .contenedor_login_registro{
+        top:-10px;
+        left:-5px;
+        margin:auto;
+    }
+    .contenedor_login_registro form{
+        position: relative;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
